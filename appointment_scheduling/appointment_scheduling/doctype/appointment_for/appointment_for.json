@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:custom_opt_optomestrist_code",
+ "creation": "2025-01-30 15:22:14.828060",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "custom_opt_optomestrist_section",
+  "custom_opt_optomestrist_code",
+  "custom_opt_optomestrist_taxnumber",
+  "custom_opt_optomestrist_email",
+  "custom_opt_optomestrist_phone",
+  "custom_opt_optomestrist_bgcolor",
+  "custom_opt_optomestrist_appointment_color",
+  "custom_opt_optomestrist_unscheduled",
+  "column_break_cvjw",
+  "custom_opt_optomestrist_name",
+  "custom_opt_optomestrist_type",
+  "custom_opt_optomestrist_mobile",
+  "custom_opt_optomestrist_alternatenumber",
+  "custom_opt_optomestrist_schedule_fore_color"
+ ],
+ "fields": [
+  {
+   "fieldname": "custom_opt_optomestrist_section",
+   "fieldtype": "Section Break",
+   "label": "Optomestrist"
+  },
+  {
+   "fieldname": "custom_opt_optomestrist_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Code",
+   "length": 25,
+   "placeholder": "Code",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "custom_opt_optomestrist_taxnumber",
+   "fieldtype": "Data",
+   "label": "Tax Number",
+   "placeholder": "Tax Number"
+  },
+  {
+   "fieldname": "custom_opt_optomestrist_email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "placeholder": "Email"
+  },
+  {
+   "fieldname": "custom_opt_optomestrist_phone",
+   "fieldtype": "Data",
+   "label": "Phone Number",
+   "placeholder": "Phone Number"
+  },
+  {
+   "fieldname": "custom_opt_optomestrist_bgcolor",
+   "fieldtype": "Color",
+   "label": "Schedule Background Color"
+  },
+  {
+   "fieldname": "custom_opt_optomestrist_appointment_color",
+   "fieldtype": "Color",
+   "label": "Appointment Color"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_optomestrist_unscheduled",
+   "fieldtype": "Check",
+   "label": "Unscheduled Optometrist"
+  },
+  {
+   "fieldname": "column_break_cvjw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_opt_optomestrist_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Name",
+   "placeholder": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "custom_opt_optomestrist_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Company\nPrivate"
+  },
+  {
+   "fieldname": "custom_opt_optomestrist_mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "placeholder": "Mobile Number"
+  },
+  {
+   "fieldname": "custom_opt_optomestrist_alternatenumber",
+   "fieldtype": "Data",
+   "label": "Alternate Number",
+   "placeholder": "Alternate Number"
+  },
+  {
+   "fieldname": "custom_opt_optomestrist_schedule_fore_color",
+   "fieldtype": "Color",
+   "label": "Schedule Fore Color"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-30 15:22:14.828060",
+ "modified_by": "Administrator",
+ "module": "Appointment Scheduling",
+ "name": "Appointment For",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

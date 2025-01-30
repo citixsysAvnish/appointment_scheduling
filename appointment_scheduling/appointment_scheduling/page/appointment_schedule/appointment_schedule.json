@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2025-01-30 15:16:34.031562",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-01-30 15:16:34.031562",
+ "modified_by": "Administrator",
+ "module": "Appointment Scheduling",
+ "name": "appointment_schedule",
+ "owner": "Administrator",
+ "page_name": "appointment_schedule",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1,
+ "title": "Appointment Schedule "
+}

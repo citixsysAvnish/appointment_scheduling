@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:custom_opt_store_setting_store",
+ "creation": "2025-01-30 15:15:09.689238",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "store_setting_section",
+  "custom_opt_store_setting_store",
+  "custom_opt_store_setting_appointmnet_section_break",
+  "custom_opt_store_setting_booking_starttime",
+  "custom_opt_store_setting_calender_time_slot",
+  "custom_opt_store_setting_appointment_no_show_color",
+  "column_break_dndy",
+  "custom_opt_store_setting_booking_end_time",
+  "custom_opt_store_setting_week_start_day",
+  "custom_opt_store_setting_appointment_closed_color",
+  "custom_opt_store_setting_working_days_section",
+  "custom_opt_store_setting_monday",
+  "column_break_ocvt",
+  "custom_opt_store_setting_tuesday",
+  "column_break_bkoc",
+  "custom_opt_store_setting_wednesday",
+  "column_break_jkec",
+  "custom_opt_store_setting_thursday",
+  "column_break_tlwc",
+  "custom_opt_store_setting_friday",
+  "column_break_hyob",
+  "custom_opt_store_setting_saturday",
+  "column_break_hqrz",
+  "custom_opt_store_setting_sunday",
+  "column_break_gpcl",
+  "holiday_section",
+  "custom_opt_store_setting_holiday_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "store_setting_section",
+   "fieldtype": "Section Break",
+   "label": "Store Setting"
+  },
+  {
+   "fieldname": "custom_opt_store_setting_store",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Store",
+   "options": "Warehouse",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "custom_opt_store_setting_appointmnet_section_break",
+   "fieldtype": "Section Break",
+   "label": "Appointment"
+  },
+  {
+   "fieldname": "custom_opt_store_setting_booking_starttime",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Booking Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "custom_opt_store_setting_calender_time_slot",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Calendar Time Slot (In Minutes)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "custom_opt_store_setting_appointment_no_show_color",
+   "fieldtype": "Color",
+   "label": "Appointment No Show Color"
+  },
+  {
+   "fieldname": "column_break_dndy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_opt_store_setting_booking_end_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Booking End Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "custom_opt_store_setting_week_start_day",
+   "fieldtype": "Select",
+   "label": "Week Start Day",
+   "options": "Monday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday",
+   "reqd": 1
+  },
+  {
+   "fieldname": "custom_opt_store_setting_appointment_closed_color",
+   "fieldtype": "Color",
+   "label": "Appointment Closed Color"
+  },
+  {
+   "fieldname": "custom_opt_store_setting_working_days_section",
+   "fieldtype": "Section Break",
+   "label": "Working Days"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_store_setting_monday",
+   "fieldtype": "Check",
+   "label": "Monday"
+  },
+  {
+   "fieldname": "column_break_ocvt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_store_setting_tuesday",
+   "fieldtype": "Check",
+   "label": "Tuesday"
+  },
+  {
+   "fieldname": "column_break_bkoc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_store_setting_wednesday",
+   "fieldtype": "Check",
+   "label": "Wednesday"
+  },
+  {
+   "fieldname": "column_break_jkec",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_store_setting_thursday",
+   "fieldtype": "Check",
+   "label": "Thursday"
+  },
+  {
+   "fieldname": "column_break_tlwc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_store_setting_friday",
+   "fieldtype": "Check",
+   "label": "Friday"
+  },
+  {
+   "fieldname": "column_break_hyob",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_store_setting_saturday",
+   "fieldtype": "Check",
+   "label": "Saturday"
+  },
+  {
+   "fieldname": "column_break_hqrz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_store_setting_sunday",
+   "fieldtype": "Check",
+   "label": "Sunday"
+  },
+  {
+   "fieldname": "column_break_gpcl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "holiday_section",
+   "fieldtype": "Section Break",
+   "label": "Holiday"
+  },
+  {
+   "fieldname": "custom_opt_store_setting_holiday_table",
+   "fieldtype": "Table",
+   "options": "Store Holiday"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-30 15:15:09.689238",
+ "modified_by": "Administrator",
+ "module": "Appointment Scheduling",
+ "name": "Appointment Setting",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
