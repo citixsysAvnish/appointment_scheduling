@@ -41,7 +41,8 @@ app_license = "mit"
 # webform_include_css = {"doctype": "public/css/doctype.css"}
 
 # include js in page
-page_js = {"appointment_schedule" : ["public/js/plugin/fullcalender.min.js","public/js/custom/common.js"]}
+page_js = {"appointment_schedule" : ["public/js/plugin/fullcalender.min.js",
+                                      "public/js/custom/common.js", "public/js/custom/utils.js"]}
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
