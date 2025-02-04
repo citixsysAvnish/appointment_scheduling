@@ -7,7 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "employee_code",
-  "name1",
+  "employee_name",
   "store",
   "section_break_vhvk",
   "table_cjwt"
@@ -31,21 +31,21 @@
    "unique": 1
   },
   {
-   "fetch_from": "employee_code.employee_name",
-   "fieldname": "name1",
-   "fieldtype": "Read Only",
-   "label": "Name"
-  },
-  {
    "fieldname": "store",
    "fieldtype": "Link",
    "label": "Store",
    "options": "Warehouse"
+  },
+  {
+   "fetch_from": "employee_code.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "label": "Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-30 15:39:48.497569",
+ "modified": "2025-01-30 16:55:01.491208",
  "modified_by": "Administrator",
  "module": "Appointment Scheduling",
  "name": "Appointment Schedules",
