@@ -21,7 +21,15 @@ function loadCalendar() {
 	if (!appointmentSettings) {
 		let calendarEl = document.getElementById('calendar');
 		calendar = new FullCalendar.Calendar(calendarEl, {
-			// options here
+			initialDate: date,
+			initialView: 'timeGridWeek',
+			nowIndicator: true,
+			eventOverlap: true,
+			headerToolbar: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'dayGridMonth,timeGridWeek,timeGridDay'
+			},
 		});
 		calendar.render();
 	}
@@ -77,14 +85,14 @@ function loadCalendar() {
 			allDaySlot: false,
 			dayMaxEvents: true, // allow "more" link when too many events
 			events: [
-				// {
-				// 	start: '8:00',
-				// 	end: '20:00',
-				// 	overlap: false,
-				// 	rendering: 'background',
-				// 	color: '#257e4a',
-				// 	background: '#257e4a'
-				// },
+				{
+					start: '2025-02-04T08:00:00',
+					end: '2025-02-04T20:00',
+					overlap: false,
+					rendering: 'background',
+					color: 'Red',
+					bgColor: 'yellow'
+				},
 				{
 					title: 'Meeting',
 					start: '2025-02-04T11:00:00',

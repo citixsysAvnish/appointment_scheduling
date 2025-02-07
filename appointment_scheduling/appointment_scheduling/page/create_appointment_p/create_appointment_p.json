@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2025-02-05 18:50:14.596922",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-02-05 18:50:14.596922",
+ "modified_by": "Administrator",
+ "module": "Appointment Scheduling",
+ "name": "create-appointment-p",
+ "owner": "Administrator",
+ "page_name": "create-appointment-p",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1,
+ "title": "Create Appointment"
+}

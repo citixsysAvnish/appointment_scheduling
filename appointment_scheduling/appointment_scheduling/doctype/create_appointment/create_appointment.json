@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-05 12:48:40.518866",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "store",
+  "store_name",
+  "column_break_hprg",
+  "appointments_for",
+  "consultant_name",
+  "customer_information_section",
+  "customer_code",
+  "customer_email",
+  "column_break_czet",
+  "customer_name",
+  "customer_mobile",
+  "appointment_detail_section",
+  "appointment_mode",
+  "available_schedules",
+  "start_time",
+  "end_time",
+  "column_break_wfsv",
+  "appointment_date",
+  "status",
+  "reason",
+  "lead_source"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_information_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Information"
+  },
+  {
+   "fieldname": "customer_code",
+   "fieldtype": "Link",
+   "label": "Customer Code",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_czet",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Read Only",
+   "label": "Name"
+  },
+  {
+   "fieldname": "customer_mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "appointment_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Appointment Detail"
+  },
+  {
+   "fieldname": "appointment_mode",
+   "fieldtype": "Link",
+   "label": "Appointment Mode",
+   "options": "Appointment_Mode"
+  },
+  {
+   "fieldname": "available_schedules",
+   "fieldtype": "Select",
+   "label": "Available Schedules",
+   "options": "Select"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "column_break_wfsv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "label": "Appointment Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClosed\nCancelled"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Link",
+   "label": "Reason",
+   "options": "Appointment Reason"
+  },
+  {
+   "fieldname": "lead_source",
+   "fieldtype": "Link",
+   "label": "Lead Source",
+   "options": "Appointment Lead Source"
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "label": "Store",
+   "link_filters": "[[\"Warehouse\",\"custom_is_retail_store\",\"=\",1]]",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_hprg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appointments_for",
+   "fieldtype": "Link",
+   "label": "Consultant ",
+   "link_filters": "[]",
+   "options": "Appointment For"
+  },
+  {
+   "fetch_from": "store.warehouse_name",
+   "fieldname": "store_name",
+   "fieldtype": "Read Only",
+   "label": "Store Name"
+  },
+  {
+   "fetch_from": "customer_code.customer_name",
+   "fieldname": "consultant_name",
+   "fieldtype": "Read Only",
+   "label": "Consultant Name "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-05 15:22:13.078067",
+ "modified_by": "Administrator",
+ "module": "Appointment Scheduling",
+ "name": "Create Appointment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
